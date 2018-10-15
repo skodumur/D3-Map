@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CSE 578: DV HW3</title>
+    <link rel="stylesheet"  href="bootstrap.css">
     <style>
         body {
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,11 +27,15 @@
             stroke-width: 2px;
             fill: none;
         }
+        .desc {
+            width: 1200px;
+            margin: 50px;
+        }
     </style>
 </head>
 <body>
 <div style="width: 1200px; margin-top: 20px">
-    <h2 style="text-align: center"> Analysis of number of people without internet in USA</h2>
+    <p class="text-center h2"> Analysis of number of people without internet in USA</p>
 </div>
 <div class="names">
     <label > CSE 578 Data Visualization </label>
@@ -45,7 +50,7 @@
                 <option value="chloropleth">Chloropleth</option>
                 <option value="bubble">Bubble</option>
             </select>
-            <h4 style="margin-left: 160px; margin-top: 10px; margin-bottom: 0;">Distribution of people without internet in USA</h4>
+            <p style="margin-left: 160px; margin-top: -8px; margin-bottom: 0; font-weight: bold">Distribution of people without internet in USA</p>
 
             <!--<img style="float: right;" src="legend.jpeg" width="291" height="67">-->
         </div>
@@ -56,6 +61,28 @@
     <div id="detail_chart" style=" width: 600px; height: 500px ">
 
     </div>
+
+</div>
+<div class="desc">
+    <p class="h4">Description:</p>
+    <p>
+        The main idea of these visualizations is to analyze what percent of people in each state have no internet connection in USA.</p>
+
+    <p>
+        The first Visualization(Chloropleth) gives an overview of the percentage of total population who don't have internet connection in each state,
+        here the color intensity of each state signifies the percentage of people without internet.</p>
+    <p>
+        On selecting any of the country's bar in overview chart, it populates the detailed view chart(line chart) with the selected country's performance in each year using time series line chart.
+        Similar to the first chart this has two dimensions the green line signifies wins and orange for loses.
+        Note: By default when overview chart is loaded, detail view chart is populated with the first country in the overview chart.
+    </p>
+    <p>
+        Example: On click of 'RUS' bar in overview chart the detail view shows Russia's year wise performance in detail view chart</p>
+    <p>
+        <b>Extra Credit:</b> Many countries from different continents have participated in AUS open. So, displaying all countries data in a single chart might make it look clumsy.
+        So, filtering countries based on a continent is provided on top of the overview chart. Example: When a user is interested in Asian countries performance then he needs to select Asia from a select drop-down
+        then both the charts reflect data of Asian countries.
+    </p>
 </div>
 
 </body>
