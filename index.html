@@ -36,9 +36,22 @@
     <label > CSE 578 Data Visualization </label>
     <label style="float: right"> Sumanth Kodumuru &nbsp; &nbsp; <i>10/14/2018</i> </label>
 </div>
-<div style="width: 1200px; height: 500px; margin-top: 20px; display: inline-flex; border: solid 1px">
-    <div id="map_election" style=" width: 900px; height: 500px ">
+<div style="width: 1200px; height: 600px; margin-top: 20px; display: inline-flex; border: solid 1px">
 
+    <div>
+        <div>
+            <label>Show in Percentage</label>
+            <select name="carlist" id="mySelect">
+                <option value="chloropleth">Chloropleth</option>
+                <option value="bubble">Bubble</option>
+            </select>
+            <h4 style="margin-left: 160px; margin-top: 15px; margin-bottom: 0;">Distribution of people without internet in USA</h4>
+
+            <!--<img style="float: right;" src="legend.jpeg" width="291" height="67">-->
+        </div>
+        <div id="map_election" style=" width: 700px; height: 500px ">
+
+        </div>
     </div>
     <div id="detail_chart" style=" width: 600px; height: 500px ">
 
@@ -49,6 +62,7 @@
 <script src="d3.js"></script>
 <script src="topojson.js"></script>
 <script src="datamaps.js"></script>
+<script src="data.js"></script>
 <script src="app.js"></script>
 <script src="detail.js"></script>
 </html>
