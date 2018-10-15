@@ -47,7 +47,7 @@ function mapChart() {
             'medium': '#CED7C3',
             'high': '#F16051',
             'veryHigh':'#AE123A',
-            defaultFill: '#ede5af'
+            defaultFill: '#FDD0A2'
         },
         data: mapdata,
         done: function(datamap) {
