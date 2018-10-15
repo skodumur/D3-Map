@@ -1,0 +1,255 @@
+﻿INT((SUM([P bachelor and above])/[Calculation2])*100),WY,25
+INT((SUM([P below middle school])/[Calculation2])*100),WY,0
+INT((SUM([P high school equivalent])/[Calculation2])*100),WY,29
+INT((SUM([P some college])/[Calculation2])*100),WY,39
+INT((SUM([P some high school])/[Calculation2])*100),WY,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),WV,26
+INT((SUM([P below middle school])/[Calculation2])*100),WV,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),WV,36
+INT((SUM([P some college])/[Calculation2])*100),WV,27
+INT((SUM([P some high school])/[Calculation2])*100),WV,8
+INT((SUM([P bachelor and above])/[Calculation2])*100),WI,32
+INT((SUM([P below middle school])/[Calculation2])*100),WI,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),WI,29
+INT((SUM([P some college])/[Calculation2])*100),WI,31
+INT((SUM([P some high school])/[Calculation2])*100),WI,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),WA,36
+INT((SUM([P below middle school])/[Calculation2])*100),WA,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),WA,22
+INT((SUM([P some college])/[Calculation2])*100),WA,33
+INT((SUM([P some high school])/[Calculation2])*100),WA,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),VT,50
+INT((SUM([P below middle school])/[Calculation2])*100),VT,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),VT,20
+INT((SUM([P some college])/[Calculation2])*100),VT,24
+INT((SUM([P some high school])/[Calculation2])*100),VT,2
+INT((SUM([P bachelor and above])/[Calculation2])*100),VA,44
+INT((SUM([P below middle school])/[Calculation2])*100),VA,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),VA,20
+INT((SUM([P some college])/[Calculation2])*100),VA,26
+INT((SUM([P some high school])/[Calculation2])*100),VA,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),UT,34
+INT((SUM([P below middle school])/[Calculation2])*100),UT,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),UT,21
+INT((SUM([P some college])/[Calculation2])*100),UT,36
+INT((SUM([P some high school])/[Calculation2])*100),UT,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),TX,31
+INT((SUM([P below middle school])/[Calculation2])*100),TX,6
+INT((SUM([P high school equivalent])/[Calculation2])*100),TX,24
+INT((SUM([P some college])/[Calculation2])*100),TX,29
+INT((SUM([P some high school])/[Calculation2])*100),TX,8
+INT((SUM([P bachelor and above])/[Calculation2])*100),TN,32
+INT((SUM([P below middle school])/[Calculation2])*100),TN,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),TN,28
+INT((SUM([P some college])/[Calculation2])*100),TN,29
+INT((SUM([P some high school])/[Calculation2])*100),TN,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),SD,32
+INT((SUM([P below middle school])/[Calculation2])*100),SD,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),SD,26
+INT((SUM([P some college])/[Calculation2])*100),SD,34
+INT((SUM([P some high school])/[Calculation2])*100),SD,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),SC,29
+INT((SUM([P below middle school])/[Calculation2])*100),SC,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),SC,27
+INT((SUM([P some college])/[Calculation2])*100),SC,31
+INT((SUM([P some high school])/[Calculation2])*100),SC,8
+INT((SUM([P bachelor and above])/[Calculation2])*100),RI,33
+INT((SUM([P below middle school])/[Calculation2])*100),RI,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),RI,28
+INT((SUM([P some college])/[Calculation2])*100),RI,27
+INT((SUM([P some high school])/[Calculation2])*100),RI,6
+INT((SUM([P bachelor and above])/[Calculation2])*100),PA,32
+INT((SUM([P below middle school])/[Calculation2])*100),PA,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),PA,34
+INT((SUM([P some college])/[Calculation2])*100),PA,24
+INT((SUM([P some high school])/[Calculation2])*100),PA,6
+INT((SUM([P bachelor and above])/[Calculation2])*100),OR,34
+INT((SUM([P below middle school])/[Calculation2])*100),OR,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),OR,22
+INT((SUM([P some college])/[Calculation2])*100),OR,34
+INT((SUM([P some high school])/[Calculation2])*100),OR,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),OK,29
+INT((SUM([P below middle school])/[Calculation2])*100),OK,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),OK,27
+INT((SUM([P some college])/[Calculation2])*100),OK,32
+INT((SUM([P some high school])/[Calculation2])*100),OK,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),OH,30
+INT((SUM([P below middle school])/[Calculation2])*100),OH,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),OH,31
+INT((SUM([P some college])/[Calculation2])*100),OH,29
+INT((SUM([P some high school])/[Calculation2])*100),OH,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),NY,37
+INT((SUM([P below middle school])/[Calculation2])*100),NY,4
+INT((SUM([P high school equivalent])/[Calculation2])*100),NY,26
+INT((SUM([P some college])/[Calculation2])*100),NY,24
+INT((SUM([P some high school])/[Calculation2])*100),NY,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),NV,24
+INT((SUM([P below middle school])/[Calculation2])*100),NV,5
+INT((SUM([P high school equivalent])/[Calculation2])*100),NV,29
+INT((SUM([P some college])/[Calculation2])*100),NV,33
+INT((SUM([P some high school])/[Calculation2])*100),NV,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),NM,29
+INT((SUM([P below middle school])/[Calculation2])*100),NM,4
+INT((SUM([P high school equivalent])/[Calculation2])*100),NM,25
+INT((SUM([P some college])/[Calculation2])*100),NM,32
+INT((SUM([P some high school])/[Calculation2])*100),NM,8
+INT((SUM([P bachelor and above])/[Calculation2])*100),NJ,39
+INT((SUM([P below middle school])/[Calculation2])*100),NJ,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),NJ,28
+INT((SUM([P some college])/[Calculation2])*100),NJ,23
+INT((SUM([P some high school])/[Calculation2])*100),NJ,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),NH,38
+INT((SUM([P below middle school])/[Calculation2])*100),NH,0
+INT((SUM([P high school equivalent])/[Calculation2])*100),NH,26
+INT((SUM([P some college])/[Calculation2])*100),NH,29
+INT((SUM([P some high school])/[Calculation2])*100),NH,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),NE,39
+INT((SUM([P below middle school])/[Calculation2])*100),NE,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),NE,22
+INT((SUM([P some college])/[Calculation2])*100),NE,30
+INT((SUM([P some high school])/[Calculation2])*100),NE,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),ND,36
+INT((SUM([P below middle school])/[Calculation2])*100),ND,0
+INT((SUM([P high school equivalent])/[Calculation2])*100),ND,23
+INT((SUM([P some college])/[Calculation2])*100),ND,35
+INT((SUM([P some high school])/[Calculation2])*100),ND,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),NC,33
+INT((SUM([P below middle school])/[Calculation2])*100),NC,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),NC,24
+INT((SUM([P some college])/[Calculation2])*100),NC,31
+INT((SUM([P some high school])/[Calculation2])*100),NC,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),MT,35
+INT((SUM([P below middle school])/[Calculation2])*100),MT,0
+INT((SUM([P high school equivalent])/[Calculation2])*100),MT,26
+INT((SUM([P some college])/[Calculation2])*100),MT,32
+INT((SUM([P some high school])/[Calculation2])*100),MT,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),MS,26
+INT((SUM([P below middle school])/[Calculation2])*100),MS,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),MS,28
+INT((SUM([P some college])/[Calculation2])*100),MS,34
+INT((SUM([P some high school])/[Calculation2])*100),MS,8
+INT((SUM([P bachelor and above])/[Calculation2])*100),MO,34
+INT((SUM([P below middle school])/[Calculation2])*100),MO,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),MO,26
+INT((SUM([P some college])/[Calculation2])*100),MO,31
+INT((SUM([P some high school])/[Calculation2])*100),MO,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),MN,40
+INT((SUM([P below middle school])/[Calculation2])*100),MN,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),MN,21
+INT((SUM([P some college])/[Calculation2])*100),MN,31
+INT((SUM([P some high school])/[Calculation2])*100),MN,3
+INT((SUM([P bachelor and above])/[Calculation2])*100),MI,30
+INT((SUM([P below middle school])/[Calculation2])*100),MI,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),MI,28
+INT((SUM([P some college])/[Calculation2])*100),MI,33
+INT((SUM([P some high school])/[Calculation2])*100),MI,6
+INT((SUM([P bachelor and above])/[Calculation2])*100),ME,32
+INT((SUM([P below middle school])/[Calculation2])*100),ME,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),ME,31
+INT((SUM([P some college])/[Calculation2])*100),ME,30
+INT((SUM([P some high school])/[Calculation2])*100),ME,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),MD,40
+INT((SUM([P below middle school])/[Calculation2])*100),MD,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),MD,25
+INT((SUM([P some college])/[Calculation2])*100),MD,25
+INT((SUM([P some high school])/[Calculation2])*100),MD,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),MA,43
+INT((SUM([P below middle school])/[Calculation2])*100),MA,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),MA,24
+INT((SUM([P some college])/[Calculation2])*100),MA,23
+INT((SUM([P some high school])/[Calculation2])*100),MA,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),LA,27
+INT((SUM([P below middle school])/[Calculation2])*100),LA,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),LA,32
+INT((SUM([P some college])/[Calculation2])*100),LA,28
+INT((SUM([P some high school])/[Calculation2])*100),LA,9
+INT((SUM([P bachelor and above])/[Calculation2])*100),KY,31
+INT((SUM([P below middle school])/[Calculation2])*100),KY,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),KY,26
+INT((SUM([P some college])/[Calculation2])*100),KY,32
+INT((SUM([P some high school])/[Calculation2])*100),KY,6
+INT((SUM([P bachelor and above])/[Calculation2])*100),KS,40
+INT((SUM([P below middle school])/[Calculation2])*100),KS,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),KS,23
+INT((SUM([P some college])/[Calculation2])*100),KS,29
+INT((SUM([P some high school])/[Calculation2])*100),KS,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),IN,29
+INT((SUM([P below middle school])/[Calculation2])*100),IN,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),IN,31
+INT((SUM([P some college])/[Calculation2])*100),IN,29
+INT((SUM([P some high school])/[Calculation2])*100),IN,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),IL,37
+INT((SUM([P below middle school])/[Calculation2])*100),IL,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),IL,24
+INT((SUM([P some college])/[Calculation2])*100),IL,28
+INT((SUM([P some high school])/[Calculation2])*100),IL,6
+INT((SUM([P bachelor and above])/[Calculation2])*100),ID,30
+INT((SUM([P below middle school])/[Calculation2])*100),ID,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),ID,26
+INT((SUM([P some college])/[Calculation2])*100),ID,35
+INT((SUM([P some high school])/[Calculation2])*100),ID,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),IA,36
+INT((SUM([P below middle school])/[Calculation2])*100),IA,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),IA,26
+INT((SUM([P some college])/[Calculation2])*100),IA,30
+INT((SUM([P some high school])/[Calculation2])*100),IA,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),HI,32
+INT((SUM([P below middle school])/[Calculation2])*100),HI,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),HI,28
+INT((SUM([P some college])/[Calculation2])*100),HI,32
+INT((SUM([P some high school])/[Calculation2])*100),HI,4
+INT((SUM([P bachelor and above])/[Calculation2])*100),GA,35
+INT((SUM([P below middle school])/[Calculation2])*100),GA,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),GA,24
+INT((SUM([P some college])/[Calculation2])*100),GA,28
+INT((SUM([P some high school])/[Calculation2])*100),GA,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),FL,29
+INT((SUM([P below middle school])/[Calculation2])*100),FL,3
+INT((SUM([P high school equivalent])/[Calculation2])*100),FL,28
+INT((SUM([P some college])/[Calculation2])*100),FL,30
+INT((SUM([P some high school])/[Calculation2])*100),FL,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),DE,31
+INT((SUM([P below middle school])/[Calculation2])*100),DE,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),DE,32
+INT((SUM([P some college])/[Calculation2])*100),DE,26
+INT((SUM([P some high school])/[Calculation2])*100),DE,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),DC,57
+INT((SUM([P below middle school])/[Calculation2])*100),DC,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),DC,17
+INT((SUM([P some college])/[Calculation2])*100),DC,16
+INT((SUM([P some high school])/[Calculation2])*100),DC,6
+INT((SUM([P bachelor and above])/[Calculation2])*100),CT,39
+INT((SUM([P below middle school])/[Calculation2])*100),CT,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),CT,27
+INT((SUM([P some college])/[Calculation2])*100),CT,24
+INT((SUM([P some high school])/[Calculation2])*100),CT,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),CO,41
+INT((SUM([P below middle school])/[Calculation2])*100),CO,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),CO,21
+INT((SUM([P some college])/[Calculation2])*100),CO,29
+INT((SUM([P some high school])/[Calculation2])*100),CO,5
+INT((SUM([P bachelor and above])/[Calculation2])*100),CA,33
+INT((SUM([P below middle school])/[Calculation2])*100),CA,8
+INT((SUM([P high school equivalent])/[Calculation2])*100),CA,20
+INT((SUM([P some college])/[Calculation2])*100),CA,29
+INT((SUM([P some high school])/[Calculation2])*100),CA,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),AZ,29
+INT((SUM([P below middle school])/[Calculation2])*100),AZ,4
+INT((SUM([P high school equivalent])/[Calculation2])*100),AZ,24
+INT((SUM([P some college])/[Calculation2])*100),AZ,34
+INT((SUM([P some high school])/[Calculation2])*100),AZ,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),AR,28
+INT((SUM([P below middle school])/[Calculation2])*100),AR,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),AR,30
+INT((SUM([P some college])/[Calculation2])*100),AR,30
+INT((SUM([P some high school])/[Calculation2])*100),AR,7
+INT((SUM([P bachelor and above])/[Calculation2])*100),AL,28
+INT((SUM([P below middle school])/[Calculation2])*100),AL,2
+INT((SUM([P high school equivalent])/[Calculation2])*100),AL,28
+INT((SUM([P some college])/[Calculation2])*100),AL,30
+INT((SUM([P some high school])/[Calculation2])*100),AL,9
+INT((SUM([P bachelor and above])/[Calculation2])*100),AK,32
+INT((SUM([P below middle school])/[Calculation2])*100),AK,1
+INT((SUM([P high school equivalent])/[Calculation2])*100),AK,25
+INT((SUM([P some college])/[Calculation2])*100),AK,37
+INT((SUM([P some high school])/[Calculation2])*100),AK,3

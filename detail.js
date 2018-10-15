@@ -1,6 +1,6 @@
-function detail(only) {
+function detail(state, name) {
     d3.select('#detail_chart').selectAll("*").remove();
-    var svg = d3.select("#detail_chart")
+    let svg = d3.select("#detail_chart")
 	.append("svg")
 	.append("g");
 
@@ -15,7 +15,7 @@ var width = 500,
     height = 500,
 	radius = Math.min(width, height) / 2;
 
-radius = radius -100;
+radius = radius -120;
 var pie = d3.layout.pie()
 	.sort(null)
 	.value(function(d) {
@@ -31,31 +31,31 @@ var outerArc = d3.svg.arc()
 	.outerRadius(radius * 0.9);
 
 svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    svg.append("text")
+        .attr("x", (width-480) / 2)
+        .attr("y", -200)
+        .attr('font-weight', 'bold')
+        .attr("class", "title")
+        .attr("text-anchor", "middle")
+        .text("Distribution of education level in " + name);
 
 var key = function(d){ return d.data.label; };
 
 var color = d3.scale.ordinal()
-	.domain(["Middle", "High","Bachelor", "College", "Primary"])
+	.domain(["Middle", "High", "College","Bachelor", "Primary"])
 	.range(["#98abc5", "#8a89a6", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
 function randomData (){
 	var labels = color.domain();
-	return labels.map(function(label){
-		return { label: label, value: Math.random() }
+	var values = mapdata[state].detail;
+	return labels.map(function(label, i){
+		return { label: label, value: values[i]}
 	});
 }
 
 change(randomData());
 
-d3.select(".randomize")
-	.on("click", function(){
-		change(randomData());
-	});
-
-
 function change(data) {
-
-	/* ------- PIE SLICES -------*/
 	var slice = svg.select(".slices").selectAll("path.slice")
 		.data(pie(data), key);
 
@@ -78,8 +78,6 @@ function change(data) {
 	slice.exit()
 		.remove();
 
-	/* ------- TEXT LABELS -------*/
-
 	var text = svg.select(".labels").selectAll("text")
 		.data(pie(data), key);
 
@@ -87,7 +85,7 @@ function change(data) {
 		.append("text")
 		.attr("dy", ".35em")
 		.text(function(d) {
-			return d.data.label;
+			return d.data.label + ':' + d.data.value + '%';
 		});
 
 	function midAngle(d){
@@ -119,8 +117,6 @@ function change(data) {
 	text.exit()
 		.remove();
 
-	/* ------- SLICE TO TEXT POLYLINES -------*/
-
 	var polyline = svg.select(".lines").selectAll("polyline")
 		.data(pie(data), key);
 
@@ -144,4 +140,4 @@ function change(data) {
 		.remove();
 }
 }
-detail();
+detail('AZ', 'Arizona');
