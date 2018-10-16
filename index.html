@@ -47,7 +47,7 @@
         <div style="padding-top: 10px; padding-left: 10px;">
             <label>Map type:</label>
             <select name="carlist" id="mySelect">
-                <option value="chloropleth">Chloropleth</option>
+                <option value="choropleth">Choropleth</option>
                 <option value="bubble">Bubble</option>
             </select>
             <p style="margin-left: 160px; margin-top: -8px; margin-bottom: 0; font-weight: bold">Distribution of people without internet in USA</p>
@@ -69,19 +69,18 @@
         The main idea of these visualizations is to analyze what percent of people in each state have no internet connection in USA.</p>
 
     <p>
-        The first Visualization(Chloropleth) gives an overview of the percentage of total population who don't have internet connection in each state,
-        here the color intensity of each state signifies the percentage of people without internet.</p>
+        The first Visualization(choropleth) gives an overview of the percentage of total population who don't have internet connection in each state,
+        here the color intensity of each state signifies the percentage of people without internet. Ranging from green(least) to red(highest)</p>
     <p>
-        On selecting any of the country's bar in overview chart, it populates the detailed view chart(line chart) with the selected country's performance in each year using time series line chart.
-        Similar to the first chart this has two dimensions the green line signifies wins and orange for loses.
-        Note: By default when overview chart is loaded, detail view chart is populated with the first country in the overview chart.
+        On selecting any of the state in the overview chart, it populates the detailed view chart(donut chart) with the selected state's distribution of educational level of students without internet.
+        Similar to the first chart this also has color coding for different level of education like "Primary level, Middle level, High level, College level, Bachelor level"
+        Note: By default when overview chart is loaded, detail view chart is populated with the Arizona's distribution.
     </p>
     <p>
-        Example: On click of 'RUS' bar in overview chart the detail view shows Russia's year wise performance in detail view chart</p>
+        Example: On click of 'CA'(California) state in overview chart the detail view shows California's educational distribution of its students in detail view chart</p>
     <p>
-        <b>Extra Credit:</b> Many countries from different continents have participated in AUS open. So, displaying all countries data in a single chart might make it look clumsy.
-        So, filtering countries based on a continent is provided on top of the overview chart. Example: When a user is interested in Asian countries performance then he needs to select Asia from a select drop-down
-        then both the charts reflect data of Asian countries.
+        <b>Extra Credit:</b> The same information can be visualized using bubble chart which is made available to the user by selecting same from the drop down provided. But for many states like Rhode island, Hawaii
+        whose area is very small the bubble outbound the state's area. Hence, choropleth comes in handy in this situation.
     </p>
 </div>
 

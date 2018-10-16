@@ -57,7 +57,7 @@ function mapChart() {
                 }
             });
             document.getElementById('mySelect').addEventListener('change', (evt) => {
-                if(evt.target.value === 'chloropleth') {
+                if(evt.target.value === 'choropleth') {
                     showChloropleth();
                 } else {
                     showBubble();
@@ -88,7 +88,7 @@ function mapChart() {
     }
     function showChloropleth() {
         USMap.bubbles([]);
-        USMap.updateChoropleth(mapdata)
+        USMap.updateChoropleth(mapdata);
     }
     USMap.labels();
     USMap.legend({
