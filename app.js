@@ -46,7 +46,7 @@ function mapChart() {
             popupTemplate: function(geography, data) {
                 let text = '<div class="hoverinfo">' + geography.properties.name ;
                 if (data && (data.percent > -1)) {
-                    text += ':' +  data.percent + '% '
+                    text += ':' +  data.percent
                 }
                 text += '</div>';
                 return text;
@@ -62,7 +62,7 @@ function mapChart() {
             'veryHigh':'#AE123A',
             defaultFill: '#FDD0A2'
         },
-        data: mapdata,
+        data: Object.assign({}, mapdata),
         done: function(datamap) {
             datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
                 if (selectedState !== geography.id){
@@ -140,7 +140,7 @@ function mapChart() {
         }
         USMap.bubbles(bombs, {
             popupTemplate: function (geo, data) {
-                return ['<div class="hoverinfo">' +  data.state + ':' +  data.radius + '% ',
+                return ['<div class="hoverinfo">' +  data.state + ':' +  data.radius,
                     '</div>'].join('');
             }
         });
@@ -165,7 +165,7 @@ function mapChart() {
         USMap.bubbles([]);
         if (total) {
             let newVals = getPopulation();
-            USMap.updateChoropleth(newVals);
+            USMap.updateChoropleth(Object.assign({}, newVals), {reset: true});
             d3.select('.datamaps-legend').remove();
             USMap.legend({
                 labels: {
@@ -178,7 +178,7 @@ function mapChart() {
                 },
             });
         } else {
-            USMap.updateChoropleth(mapdata);
+            USMap.updateChoropleth(Object.assign({}, mapdata), {reset: true});
             d3.select('.datamaps-legend').remove();
             USMap.legend({
                 labels: {
