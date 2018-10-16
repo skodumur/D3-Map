@@ -6,7 +6,20 @@ function mapChart() {
         let cur = mapdata[i];
         cur.fillKey = colors(cur.percent);
     }
-    function colors(color) {
+    function colors(color, population) {
+        if (population) {
+            if (color < 5) {
+                return 'veryLow'
+            } else if( color > 5 && color < 10) {
+                return 'low'
+            } else if( color > 10 && color < 20) {
+                return 'medium'
+            } else if( color > 20 && color < 40){
+                return 'high'
+            } else {
+                return 'veryHigh'
+            }
+        }
         if (color < 12) {
             return 'veryLow'
         } else if( color > 12 && color < 15) {
@@ -32,7 +45,7 @@ function mapChart() {
             highlightBorderColor: '#bada55',
             popupTemplate: function(geography, data) {
                 let text = '<div class="hoverinfo">' + geography.properties.name ;
-                if (data && data.percent) {
+                if (data && (data.percent > -1)) {
                     text += ':' +  data.percent + '% '
                 }
                 text += '</div>';
@@ -57,27 +70,73 @@ function mapChart() {
                 }
             });
             document.getElementById('mySelect').addEventListener('change', (evt) => {
+                let isTotal = document.getElementById('mySelect2').value !== 'percent';
                 if(evt.target.value === 'choropleth') {
-                    showChloropleth();
+                    showChloropleth(isTotal);
                 } else {
-                    showBubble();
+                    showBubble(isTotal);
+                }
+            });
+            document.getElementById('mySelect2').addEventListener('change', (evt) => {
+                let isTotal = evt.target.value !== 'percent';
+                let val = document.getElementById('mySelect').value;
+                if(val === 'choropleth') {
+                    showChloropleth(isTotal);
+                } else {
+                    showBubble(isTotal);
                 }
             });
         }
     });
 
-    function showBubble() {
+    function showBubble(total) {
         USMap.updateChoropleth(null, {reset: true});
         let bombs = [];
-        for(let i in mapdata) {
-            let cur = mapdata[i];
-            bombs.push({
-                centered: i,
-                state: i,
-                radius: cur.percent,
-                fillKey: colors(cur.percent),
-                fillOpacity: 0.7
-            })
+        if (total) {
+            let newVals = getPopulation();
+            for(let i in newVals) {
+                let cur = newVals[i];
+                bombs.push({
+                    centered: i,
+                    state: i,
+                    radius: cur.percent,
+                    fillKey: colors(cur.percent, true),
+                    fillOpacity: 0.7
+                })
+            }
+            d3.select('.datamaps-legend').remove();
+            USMap.legend({
+                labels: {
+                    'veryLow': '<5L',
+                    'low':'5L-10L',
+                    'medium': '10L-20L',
+                    'high': '20L-40L',
+                    'veryHigh':'>40L',
+                    defaultFill: '#EDDC4E'
+                },
+            });
+        } else {
+            for(let i in mapdata) {
+                let cur = mapdata[i];
+                bombs.push({
+                    centered: i,
+                    state: i,
+                    radius: cur.percent,
+                    fillKey: colors(cur.percent),
+                    fillOpacity: 0.7
+                })
+            }
+            d3.select('.datamaps-legend').remove();
+            USMap.legend({
+                labels: {
+                    'veryLow': '<12%',
+                    'low':'12%-15%',
+                    'medium': '15%-18%',
+                    'high': '18%-24%',
+                    'veryHigh':'>24%',
+                    defaultFill: '#EDDC4E'
+                },
+            });
         }
         USMap.bubbles(bombs, {
             popupTemplate: function (geo, data) {
@@ -85,10 +144,53 @@ function mapChart() {
                     '</div>'].join('');
             }
         });
+
     }
-    function showChloropleth() {
+    function getPopulation() {
+        let vals = [];
+        for(let i in mapdata) {
+            vals.push(mapdata[i].result)
+        }
+        let newVals = {};
+        for(let i in mapdata) {
+            let cur = mapdata[i];
+            newVals[i] = {
+                "percent": Math.round(cur.result/100000)
+            };
+            newVals[i].fillKey = colors(newVals[i].percent, true);
+        }
+        return newVals;
+    }
+    function showChloropleth(total) {
         USMap.bubbles([]);
-        USMap.updateChoropleth(mapdata);
+        if (total) {
+            let newVals = getPopulation();
+            USMap.updateChoropleth(newVals);
+            d3.select('.datamaps-legend').remove();
+            USMap.legend({
+                labels: {
+                    'veryLow': '<5L',
+                    'low':'5L-10L',
+                    'medium': '10L-20L',
+                    'high': '20L-40L',
+                    'veryHigh':'>40L',
+                    defaultFill: '#EDDC4E'
+                },
+            });
+        } else {
+            USMap.updateChoropleth(mapdata);
+            d3.select('.datamaps-legend').remove();
+            USMap.legend({
+                labels: {
+                    'veryLow': '<12%',
+                    'low':'12%-15%',
+                    'medium': '15%-18%',
+                    'high': '18%-24%',
+                    'veryHigh':'>24%',
+                    defaultFill: '#EDDC4E'
+                },
+            });
+        }
     }
     USMap.labels();
     USMap.legend({
